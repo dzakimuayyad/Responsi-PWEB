@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Kamera</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jenis Kamera Tersedia</h1>
+        <ul id="camera-list">
+            <!-- List kamera akan di-generate oleh JavaScript -->
+        </ul>
+    </div>
+    <h2>Pesan Kamera</h2>
+    <form action="proses_order.php" method="post" id="order-form">
+        <label for="nama-perental">Nama Pelanggan:</label><br>
+        <input type="text" id="customerName" name="customer_name" required><br><br>
+        <label for="jenis_kamera">Pilih Kamera:</label><br>
+        <select id="camera-id" name="camera_id" required>
+        <!-- Opsi kamera akan di-generate oleh JavaScript -->
+        </select><br><br>
+        <label for="rental-days">Lama Sewa (hari):</label><br>
+        <input type="number" id="rentalDays" name="rental-days" min="1"><br><br>
+        <button type="submit">Pesan Sekarang</button>
+</form>
+    <script src="script.js"></script>
+</body>
+</html>
